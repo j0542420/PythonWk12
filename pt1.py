@@ -38,8 +38,8 @@ class ShoppingCart:
 cart = ShoppingCart()
 #adding product to the cart
 cart.AddProduct(product(1,"Name1",2.3))
-cart.AddProduct(product(1,"Name2",2.3))
-cart.AddProduct(product(1,"Name3",2.3))
+cart.AddProduct(product(2,"Name2",3.3))
+cart.AddProduct(product(3,"Name3",4.3))
 print("after adding")
 #print all products in cart
 cart.ListProduct()
