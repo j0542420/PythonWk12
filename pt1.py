@@ -12,7 +12,6 @@
 #printVoting("Final Result")
 #printVoting()
 
-shoppinglist = []
 
 class product:
     def __init__(self,ProductID,ProductName, Price): #constructor
@@ -23,7 +22,7 @@ class product:
         return(f' {self.ProductID} -- {self.ProductName} -- {self.Price}')
     
 class ShoppingCart:
-    def __init__(self):
+    def __init__(self): #constructor
         self.ProductList=[]
     def AddProduct(self,product):
         self.ProductList.append(product)
@@ -31,7 +30,7 @@ class ShoppingCart:
         for x in self.ProductList:
             if(x.ProductID == productID):
                 self.ProductList.remove(x)
-    def ListProduct(self):
+    def ListProducts(self):
         for x in self.ProductList:
             print(x)
 # shopping cart object            
@@ -42,9 +41,9 @@ cart.AddProduct(product(2,"Name2",3.3))
 cart.AddProduct(product(3,"Name3",4.3))
 print("after adding")
 #print all products in cart
-cart.ListProduct()
+cart.ListProducts()
 #Remove product withID 1
 cart.RemoveProduct(1)
 print("after removing")
 #print all products in cart
-cart.ListProduct()
+cart.ListProducts()
