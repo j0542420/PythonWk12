@@ -15,11 +15,11 @@
 shoppinglist = []
 
 class product:
-   def __init__(self,ProductID,ProductName, Price): #constructor
+    def __init__(self,ProductID,ProductName, Price): #constructor
        self.ProductID = ProductID
        self.ProductName = ProductName
        self.Price = Price  
-   def __str__(self): # this function for printing object
+    def __str__(self): # this function for printing object
         return(f' {self.ProductID} -- {self.ProductName} -- {self.Price}')
     
 class ShoppingCart:
@@ -43,7 +43,8 @@ cart.AddProduct(product(1,"Name3",2.3))
 print("after adding")
 #print all products in cart
 cart.ListProduct()
-
+#Remove product withID 1
 cart.RemoveProduct(1)
 print("after removing")
+#print all products in cart
 cart.ListProduct()
